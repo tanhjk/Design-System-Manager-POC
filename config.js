@@ -16,7 +16,7 @@ StyleDictionary.registerFileHeader({
 StyleDictionary.registerFilter({
   name: "baseFilter",
   matcher: function (token) {
-    return token.attributes.category === "size"
+    return token.attributes.category === "color"
   },
 })
 const myStyleDictionary = StyleDictionary.extend({
