@@ -23,7 +23,7 @@ const colorMode = "standard"
 
 export default function Home({ children }) {
   return (
-    <Page className={pubCode + " " + "theme--" + pubCode + "-" + colorMode}>
+    <Page className={`${pubCode} theme--${pubCode}-${colorMode}`}>
       <Header />
       <Container>
         <DirectoryTree />

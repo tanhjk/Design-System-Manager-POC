@@ -1,6 +1,18 @@
-@import "transform.scss";
+@import "_base.scss";
+@import "_typography.scss";
+@import "_ctokens.scss";
+@import "_ttokens.scss";
+@import "_shadow.scss";
 
 body {
-  background-color: $color-white;
-  color: $color-grey-900;
+  color: $color-greyscale-white;
+  background-color: $color-greyscale-grey-900;
+}
+
+.card {
+  background-color: $color-tokens-background;
+  color: $color-tokens-core-text;
+  margin: 3rem auto;
+  padding: 3rem;
+  box-shadow: $shadow-card;
 }
