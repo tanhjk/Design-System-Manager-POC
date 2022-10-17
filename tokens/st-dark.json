@@ -1,0 +1,26 @@
+{
+  "highlightText": {
+    "value": "{st-blue}",
+    "type": "color"
+  },
+  "coreText": {
+    "value": "#fff",
+    "type": "color"
+  },
+  "mutedText": {
+    "value": "{st-blue-700}",
+    "type": "color"
+  },
+  "linkText": {
+    "value": "{st-turquoise}",
+    "type": "color"
+  },
+  "hoverLinkText": {
+    "value": "{st-blue-700}",
+    "type": "color"
+  },
+  "background": {
+    "value": "{st-blue}",
+    "type": "color"
+  }
+}
