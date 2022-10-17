@@ -1,27 +1,27 @@
 {
   "colorTokens": {
     "highlightText": {
-      "value": "{color.blue-700}",
+      "value": "{color.color.blue-700}",
       "type": "color"
     },
     "coreText": {
-      "value": "{color.grey-900}",
+      "value": "{color.greyscale.grey-900}",
       "type": "color"
     },
     "mutedText": {
-      "value": "{color.grey-500}",
+      "value": "{color.greyscale.grey-500}",
       "type": "color"
     },
     "linkText": {
-      "value": "{color.blue-600}",
+      "value": "{color.color.blue-600}",
       "type": "color"
     },
     "hoverLinkText": {
-      "value": "{color.blue-200}",
+      "value": "{color.color.blue-200}",
       "type": "color"
     },
     "background": {
-      "value": "{color.white}",
+      "value": "{color.greyscale.white}",
       "type": "color"
     }
   }

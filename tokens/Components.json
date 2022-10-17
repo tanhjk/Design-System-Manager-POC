@@ -1,0 +1,14 @@
+{
+  "Card": {
+    "value": {
+      "borderRadius": "{size.borderRadius.card}",
+      "verticalPadding": "{spacing.md}",
+      "horizontalPadding": "{spacing.md}",
+      "fill": "{colorTokens.background}",
+      "spacing": "{spacing.lg}",
+      "boxShadow": "{shadow.card}"
+    },
+    "type": "composition",
+    "description": "Component Token for Card"
+  }
+}
