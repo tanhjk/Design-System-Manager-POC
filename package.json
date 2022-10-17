@@ -11,14 +11,25 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "convert": "node config.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.24.4",
+    "gatsby-plugin-sass": "^5.24.0",
+    "gatsby-plugin-styled-components": "^5.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-json": "^4.24.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-dictionary": "^3.7.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "bootstrap": "^5.2.2",
     "prettier": "^2.7.1"
   },
   "repository": {

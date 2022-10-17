@@ -1,0 +1,172 @@
+{
+  "color": {
+    "color": {
+      "blue-700": {
+        "value": "#9bab00",
+        "type": "color"
+      },
+      "blue-600": {
+        "value": "#4a90e2",
+        "type": "color"
+      },
+      "blue-200": {
+        "value": "#c6cfe9",
+        "type": "color"
+      }
+    },
+    "greyscale": {
+      "grey-900": {
+        "value": "#333333",
+        "type": "color"
+      },
+      "grey-500": {
+        "value": "#808080",
+        "type": "color"
+      },
+      "white": {
+        "value": "#fff",
+        "type": "color"
+      }
+    },
+    "brand": {
+      "st-blue": {
+        "value": "#0c2b57",
+        "type": "color"
+      },
+      "st-blue-700": {
+        "value": "#12239a",
+        "type": "color"
+      },
+      "st-turquoise": {
+        "value": "#13fdfd",
+        "type": "color"
+      }
+    }
+  },
+  "size": {
+    "borderRadius": {
+      "card": {
+        "value": "32",
+        "type": "borderRadius"
+      },
+      "form": {
+        "value": "8",
+        "type": "borderRadius",
+        "description": "This is used for forms"
+      }
+    },
+    "font": {
+      "0": {
+        "value": "13",
+        "type": "fontSizes"
+      },
+      "1": {
+        "value": "14",
+        "type": "fontSizes"
+      },
+      "2": {
+        "value": "16",
+        "type": "fontSizes"
+      },
+      "3": {
+        "value": "18",
+        "type": "fontSizes"
+      },
+      "4": {
+        "value": "24",
+        "type": "fontSizes"
+      },
+      "5": {
+        "value": "36",
+        "type": "fontSizes"
+      },
+      "6": {
+        "value": "48",
+        "type": "fontSizes"
+      }
+    }
+  },
+  "spacing": {
+    "xxs": {
+      "value": "4",
+      "type": "spacing"
+    },
+    "xs": {
+      "value": "8",
+      "type": "spacing"
+    },
+    "md": {
+      "value": "16",
+      "type": "spacing"
+    },
+    "lg": {
+      "value": "24",
+      "type": "spacing"
+    },
+    "xl": {
+      "value": "32",
+      "type": "spacing"
+    }
+  },
+  "shadow": {
+    "card": {
+      "value": {
+        "color": "#0000001a",
+        "type": "dropShadow",
+        "x": "5",
+        "y": "5",
+        "blur": "10",
+        "spread": "0"
+      },
+      "type": "boxShadow"
+    }
+  },
+  "type": {
+    "textCases": {
+      "Uppercase": {
+        "value": "uppercase",
+        "type": "textCase"
+      },
+      "normal": {
+        "value": "none",
+        "type": "textCase"
+      }
+    },
+    "fontWeights": {
+      "regular": {
+        "value": "Regular",
+        "type": "fontWeights"
+      },
+      "semibold": {
+        "value": "SemiBold",
+        "type": "fontWeights"
+      },
+      "bold": {
+        "value": "Bold",
+        "type": "fontWeights"
+      }
+    },
+    "lineHeights": {
+      "115": {
+        "value": "115%",
+        "type": "lineHeights",
+        "description": "this is used for headlines/titles"
+      },
+      "140": {
+        "value": "140%",
+        "type": "lineHeights",
+        "description": "this is used for paragraphs"
+      }
+    },
+    "fontFamilies": {
+      "source-sans-pro": {
+        "value": "Source Sans Pro",
+        "type": "fontFamilies"
+      },
+      "curator-head-st-bold": {
+        "value": "Curator Head ST Bold",
+        "type": "fontFamilies"
+      }
+    }
+  }
+}

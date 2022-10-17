@@ -1,0 +1,10 @@
+{
+  "tokenSetOrder": [
+    "identities",
+    "colorToken",
+    "desktop",
+    "Components",
+    "st",
+    "st-dark"
+  ]
+}
