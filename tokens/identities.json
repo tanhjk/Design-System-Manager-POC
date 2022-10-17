@@ -111,12 +111,12 @@
   "shadow": {
     "card": {
       "value": {
-        "color": "#0000001a",
-        "type": "dropShadow",
         "x": "5",
         "y": "5",
         "blur": "10",
-        "spread": "0"
+        "spread": "0",
+        "color": "{colorTokens.mutedText}",
+        "type": "dropShadow"
       },
       "type": "boxShadow"
     }
