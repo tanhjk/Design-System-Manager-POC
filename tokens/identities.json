@@ -160,11 +160,11 @@
     },
     "fontFamilies": {
       "source-sans-pro": {
-        "value": "Source Sans Pro",
+        "value": "Source Sans Pro, sans-serif",
         "type": "fontFamilies"
       },
       "curator-head-st-bold": {
-        "value": "Curator Head ST Bold",
+        "value": "'Curator Head ST Bold', sans-serif",
         "type": "fontFamilies"
       }
     }
