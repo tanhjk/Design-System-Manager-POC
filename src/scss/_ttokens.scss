@@ -1,66 +1,68 @@
-$theme: (.tt-display-title {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: $size-font-6;
-          line-height: $type-line-heights-140; 
-        }
+// $theme: (
+.tt-display-title {
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: $size-font-6;
+  line-height: $type-line-heights-140;
+}
 .tt-section-title {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: 36;
-          line-height: 140%; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: 36;
+  line-height: 140%;
+}
 .tt-screen-title {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: 36;
-          line-height: 140%; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: 36;
+  line-height: 140%;
+}
 .tt-blockquote {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: 20;
-          line-height: 115%; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: 20;
+  line-height: 115%;
+}
 .tt-subtitle {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-regular;
-          font-size: 18;
-          line-height: 115%; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-regular;
+  font-size: 18;
+  line-height: 115%;
+}
 .tt-button {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: 18;
-          line-height: 115%; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: 18;
+  line-height: 115%;
+}
 .tt-social-button {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: $size-font-3;
-          line-height: $type-line-heights-115; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: $size-font-3;
+  line-height: $type-line-heights-115;
+}
 .tt-emphasis-text {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: $size-font-2;
-          line-height: $type-line-heights-115; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: $size-font-2;
+  line-height: $type-line-heights-115;
+}
 .tt-body-text {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-regular;
-          font-size: $size-font-2;
-          line-height: $type-line-heights-115; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-regular;
+  font-size: $size-font-2;
+  line-height: $type-line-heights-115;
+}
 .tt-tagline {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-regular;
-          font-size: 14;
-          line-height: 115%; 
-        }
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-regular;
+  font-size: 14;
+  line-height: 115%;
+}
 .tt-function-text {
-          font-family: $type-font-families-source-sans-pro;
-          font-weight: $type-font-weights-semibold;
-          font-size: $size-font-0;
-          line-height: $type-line-heights-115; 
-        })
+  font-family: $type-font-families-source-sans-pro;
+  font-weight: $type-font-weights-semibold;
+  font-size: $size-font-0;
+  line-height: $type-line-heights-115;
+}
+// )

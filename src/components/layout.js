@@ -18,7 +18,7 @@ const Children = styled.main`
   width: 80%;
   display: inline-block;
 `
-const pubCode = "zb"
+const pubCode = "mysph"
 const colorMode = "standard"
 
 export default function Home({ children }) {
