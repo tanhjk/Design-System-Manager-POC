@@ -115,7 +115,7 @@
         "y": "5",
         "blur": "10",
         "spread": "0",
-        "color": "{colorTokens.mysph.mutedText}",
+        "color": "{colorTokens.mysph.standard.mutedText}",
         "type": "dropShadow"
       },
       "type": "boxShadow"
