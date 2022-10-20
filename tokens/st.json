@@ -1,29 +1,57 @@
 {
   "colorTokens": {
     "st": {
-      "highlightText": {
-        "value": "{color.brand.st-blue}",
-        "type": "color"
+      "standard": {
+        "highlightText": {
+          "value": "{color.brand.st-blue}",
+          "type": "color"
+        },
+        "coreText": {
+          "value": "{color.greyscale.grey-900}",
+          "type": "color"
+        },
+        "mutedText": {
+          "value": "{color.brand.st-blue-700}",
+          "type": "color"
+        },
+        "linkText": {
+          "value": "{color.brand.st-turquoise}",
+          "type": "color"
+        },
+        "hoverLinkText": {
+          "value": "{color.brand.st-blue-700}",
+          "type": "color"
+        },
+        "background": {
+          "value": "{color.greyscale.white}",
+          "type": "color"
+        }
       },
-      "coreText": {
-        "value": "{color.greyscale.grey-900}",
-        "type": "color"
-      },
-      "mutedText": {
-        "value": "{color.brand.st-blue-700}",
-        "type": "color"
-      },
-      "linkText": {
-        "value": "{color.brand.st-turquoise}",
-        "type": "color"
-      },
-      "hoverLinkText": {
-        "value": "{color.brand.st-blue-700}",
-        "type": "color"
-      },
-      "background": {
-        "value": "{color.greyscale.white}",
-        "type": "color"
+      "dark": {
+        "highlightText": {
+          "value": "{color.brand.st-blue}",
+          "type": "color"
+        },
+        "coreText": {
+          "value": "{color.greyscale.grey-900}",
+          "type": "color"
+        },
+        "mutedText": {
+          "value": "{color.brand.st-blue-700}",
+          "type": "color"
+        },
+        "linkText": {
+          "value": "{color.brand.st-turquoise}",
+          "type": "color"
+        },
+        "hoverLinkText": {
+          "value": "{color.brand.st-blue-700}",
+          "type": "color"
+        },
+        "background": {
+          "value": "{color.greyscale.white}",
+          "type": "color"
+        }
       }
     }
   },
