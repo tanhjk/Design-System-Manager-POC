@@ -4,7 +4,7 @@
       "borderRadius": "{size.borderRadius.card}",
       "verticalPadding": "{spacing.md}",
       "horizontalPadding": "{spacing.md}",
-      "fill": "{colorTokens.mysph.background}",
+      "fill": "{colorTokens.mysph.standard.background}",
       "spacing": "{spacing.lg}",
       "boxShadow": "{shadow.card}"
     },
