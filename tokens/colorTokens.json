@@ -29,11 +29,11 @@
       },
       "dark": {
         "highlightText": {
-          "value": "{color.color.blue-700}",
+          "value": "{color.color.blue-600}",
           "type": "color"
         },
         "coreText": {
-          "value": "{color.greyscale.grey-900}",
+          "value": "{color.greyscale.white}",
           "type": "color"
         },
         "mutedText": {
@@ -49,7 +49,7 @@
           "type": "color"
         },
         "background": {
-          "value": "{color.greyscale.white}",
+          "value": "{color.greyscale.grey-900}",
           "type": "color"
         }
       }
