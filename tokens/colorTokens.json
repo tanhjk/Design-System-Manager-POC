@@ -23,7 +23,7 @@
           "type": "color"
         },
         "background": {
-          "value": "{color.greyscale.white}",
+          "value": "{color.greyscale.grey-100}",
           "type": "color"
         }
       },
