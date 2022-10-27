@@ -1,32 +1,6 @@
 {
   "colorTokens": {
     "mysph": {
-      "standard": {
-        "highlightText": {
-          "value": "{color.color.blue-700}",
-          "type": "color"
-        },
-        "coreText": {
-          "value": "{color.greyscale.grey-900}",
-          "type": "color"
-        },
-        "mutedText": {
-          "value": "{color.greyscale.grey-500}",
-          "type": "color"
-        },
-        "linkText": {
-          "value": "{color.color.blue-600}",
-          "type": "color"
-        },
-        "hoverLinkText": {
-          "value": "{color.color.blue-200}",
-          "type": "color"
-        },
-        "background": {
-          "value": "{color.greyscale.grey-100}",
-          "type": "color"
-        }
-      },
       "dark": {
         "highlightText": {
           "value": "{color.color.blue-600}",

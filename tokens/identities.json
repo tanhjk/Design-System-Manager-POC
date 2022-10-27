@@ -50,74 +50,74 @@
   "size": {
     "borderRadius": {
       "card": {
-        "value": "32",
+        "value": "32px",
         "type": "borderRadius"
       },
       "form": {
-        "value": "8",
+        "value": "8px",
         "type": "borderRadius",
         "description": "This is used for forms"
       }
     },
     "font": {
       "0": {
-        "value": "13",
+        "value": "13px",
         "type": "fontSizes"
       },
       "1": {
-        "value": "14",
+        "value": "14px",
         "type": "fontSizes"
       },
       "2": {
-        "value": "16",
+        "value": "16px",
         "type": "fontSizes"
       },
       "3": {
-        "value": "18",
+        "value": "18px",
         "type": "fontSizes"
       },
       "4": {
-        "value": "24",
+        "value": "24px",
         "type": "fontSizes"
       },
       "5": {
-        "value": "36",
+        "value": "36px",
         "type": "fontSizes"
       },
       "6": {
-        "value": "48",
+        "value": "48px",
         "type": "fontSizes"
       }
     }
   },
   "spacing": {
     "xxs": {
-      "value": "4",
+      "value": "4px",
       "type": "spacing"
     },
     "xs": {
-      "value": "8",
+      "value": "8px",
       "type": "spacing"
     },
     "md": {
-      "value": "16",
+      "value": "16px",
       "type": "spacing"
     },
     "lg": {
-      "value": "24",
+      "value": "24px",
       "type": "spacing"
     },
     "xl": {
-      "value": "32",
+      "value": "32px",
       "type": "spacing"
     }
   },
   "shadow": {
     "card": {
       "value": {
-        "x": "5",
-        "y": "5",
-        "blur": "10",
+        "x": "5px",
+        "y": "5px",
+        "blur": "10px",
         "spread": "0",
         "color": "{color.greyscale.grey-500}",
         "type": "dropShadow"
@@ -138,15 +138,15 @@
     },
     "fontWeights": {
       "regular": {
-        "value": "Regular",
+        "value": "300",
         "type": "fontWeights"
       },
       "semibold": {
-        "value": "SemiBold",
+        "value": "500",
         "type": "fontWeights"
       },
       "bold": {
-        "value": "Bold",
+        "value": "700",
         "type": "fontWeights"
       }
     },
