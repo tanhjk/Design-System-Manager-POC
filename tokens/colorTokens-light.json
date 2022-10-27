@@ -1,7 +1,7 @@
 {
   "colorTokens": {
     "mysph": {
-      "dark": {
+      "light": {
         "highlightText": {
           "value": "{color.color.blue-600}",
           "type": "color"
