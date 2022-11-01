@@ -1,12 +1,36 @@
 
-// Do not edit directly
-// Generated on Tue, 18 Oct 2022 07:20:56 GMT
-// 
-// mySPH tokens generated do not edit
 
-$color-tokens-background: $color-greyscale-white;
-$color-tokens-hover-link-text: $color-color-blue-200;
-$color-tokens-link-text: $color-color-blue-600;
-$color-tokens-muted-text: $color-greyscale-grey-500;
-$color-tokens-core-text: $color-greyscale-grey-900;
-$color-tokens-highlight-text: $color-color-blue-700;
+$ctheme: ( 
+	mysph-dark: (
+		 highlight-text : $color-color-blue-600, 
+		 core-text : $color-greyscale-white, 
+		 muted-text : $color-greyscale-grey-500, 
+		 link-text : $color-color-blue-600, 
+		 hover-link-text : $color-color-blue-200, 
+		 background : $color-greyscale-grey-900, 
+  ), 
+	mysph-light: (
+		 highlight-text : $color-color-blue-600, 
+		 core-text : $color-greyscale-grey-900, 
+		 muted-text : $color-greyscale-grey-500, 
+		 link-text : $color-color-blue-600, 
+		 hover-link-text : $color-color-blue-200, 
+		 background : $color-greyscale-grey-100, 
+  ), 
+	st-standard: (
+		 highlight-text : $color-brand-st-blue, 
+		 core-text : $color-greyscale-grey-900, 
+		 muted-text : $color-brand-st-blue-700, 
+		 link-text : $color-brand-st-turquoise, 
+		 hover-link-text : $color-brand-st-blue-700, 
+		 background : $color-greyscale-white, 
+  ), 
+	st-dark: (
+		 highlight-text : $color-brand-st-blue, 
+		 core-text : $color-greyscale-grey-900, 
+		 muted-text : $color-brand-st-blue-700, 
+		 link-text : $color-brand-st-turquoise, 
+		 hover-link-text : $color-brand-st-blue-700, 
+		 background : $color-greyscale-white, 
+  ), 
+); 

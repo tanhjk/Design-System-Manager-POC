@@ -4,31 +4,28 @@ import DirectoryTree from "./sidebar/directoryTree"
 import styled from "styled-components"
 import "../scss/style.scss"
 
-const Page = styled.div`
-  width: 100%;
-  height: 100%;
-`
-
 const Container = styled.div`
   width: 100%;
-  display: flex;
-  align-items: flex-start;
 `
 const Children = styled.main`
   width: 80%;
   display: inline-block;
 `
-const pubCode = "mysph"
-const colorMode = "standard"
 
 export default function Home({ children }) {
   return (
-    <Page className={`${pubCode} theme--${pubCode}-${colorMode}`}>
+    <div className="page">
       <Header />
-      <Container>
-        <DirectoryTree />
-        <Children>{children}</Children>
+      <Container className="fluid-container">
+        <div className="row">
+          <div className="col-sm-3">
+            <DirectoryTree />
+          </div>
+          <div className="col-sm-9">
+            <Children>{children}</Children>
+          </div>
+        </div>
       </Container>
-    </Page>
+    </div>
   )
 }

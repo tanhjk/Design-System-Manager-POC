@@ -2,6 +2,17 @@ const StyleDictionary = require("style-dictionary")
 const tokens = require("./tokens")
 const path = require("path")
 
+const kebabize = str => {
+  return str
+    .split("")
+    .map((letter, idx) => {
+      return letter.toUpperCase() === letter
+        ? `${idx !== 0 ? "-" : ""}${letter.toLowerCase()}`
+        : letter
+    })
+    .join("")
+}
+
 StyleDictionary.registerFileHeader({
   name: "mySPHHeader",
   fileHeader: defaultMessage => {
@@ -65,16 +76,6 @@ StyleDictionary.registerFormat({
           "px " +
           ttVal.color
 
-        if (dictionary.usesReference(token.original.value)) {
-          // Note: make sure to use `token.original.value` because
-          // `token.value` is already resolved at this point.
-          const refs = dictionary.getReferences(token.original.value)
-          refs.forEach(ref => {
-            value = value.replace(ref.value, function () {
-              return `$${ref.name}`
-            })
-          })
-        }
         return `$${token.name} : ${value};`
       })
       .join(`\n`)
@@ -82,45 +83,126 @@ StyleDictionary.registerFormat({
 })
 
 StyleDictionary.registerFormat({
+  name: "ctBase",
+  formatter: function ({ dictionary }) {
+    const objToken = dictionary.tokens.colorTokens.mysph.light
+    var tokenList = ""
+
+    for (let tokenNm in objToken) {
+      dictionary.allTokens.map(tkn => {
+        if (tkn.name === objToken[tokenNm].name) {
+          let styles = tkn.value
+          if (styles !== "") {
+            if (dictionary.usesReference(tkn.original.value)) {
+              // Note: make sure to use `token.original.value` because
+              // `token.value` is already resolved at this point.
+              const refs = dictionary.getReferences(tkn.original.value)
+              refs.forEach(ref => {
+                styles = styles.replace(ref.value, function () {
+                  return `$${ref.name}`
+                })
+              })
+            }
+            // console.log(objToken[tokenNm].name)
+            tokenList += `$${kebabize(tokenNm)}: '${kebabize(tokenNm)}'; \n`
+          }
+        }
+      })
+    }
+    return tokenList
+  },
+})
+
+StyleDictionary.registerFormat({
+  name: "ctFormat",
+  formatter: function ({ dictionary }) {
+    const objToken = dictionary.tokens.colorTokens.mysph.standard
+    let tokenList = ``
+    for (let tokenNm in objToken) {
+      console.log(tokenNm)
+      tokenList += `$${kebabize(tokenNm)}: '${kebabize(tokenNm)}';\n`
+    }
+    var strTokens = `$ctheme: ( \n`
+    const obj = dictionary.tokens.colorTokens
+
+    for (let x in obj) {
+      // console.log(x, "- ", obj[x])
+      let brands = obj[x]
+
+      for (let theme in brands) {
+        let cts = brands[theme]
+        strTokens += `\t${x}-${theme}: (\n`
+        for (let ctk in cts) {
+          // console.log(cts[ctk].name)
+          dictionary.allTokens.map(tkn => {
+            if (tkn.name === cts[ctk].name) {
+              let styles = tkn.value
+
+              if (styles !== "") {
+                if (dictionary.usesReference(tkn.original.value)) {
+                  // Note: make sure to use `token.original.value` because
+                  // `token.value` is already resolved at this point.
+                  const refs = dictionary.getReferences(tkn.original.value)
+                  refs.forEach(ref => {
+                    styles = styles.replace(ref.value, function () {
+                      return `$${ref.name}`
+                    })
+                  })
+                }
+                strTokens += `\t\t ${kebabize(
+                  tkn.attributes.subitem
+                )} : ${styles}, \n`
+              }
+            }
+          })
+        }
+        strTokens += `  ), \n`
+      }
+    }
+    strTokens += `); \n`
+    return tokenList + "\n\n" + strTokens
+  },
+})
+
+StyleDictionary.registerFormat({
   name: "ttFormat",
   formatter: function ({ dictionary }) {
-    return (
-      `$theme: ( \n` +
-      dictionary.allTokens
-        .map(token => {
-          let value = JSON.stringify(token.value)
-          // the `dictionary` object now has `usesReference()` and
-          // `getReferences()` methods. `usesReference()` will return true if
-          // the value has a reference in it. `getReferences()` will return
-          // an array of references to the whole tokens so that you can access their
-          // names or any other attributes.
-          // console.log(token.value)
+    var strTokens = `$tThemes: ( \n`
+    const obj = dictionary.tokens.tt
 
-          const ttVal = token.value
-          console.dir(token.name)
+    for (let x in obj) {
+      // console.log(x, "- ", obj[x])
+      strTokens += `\t${x}: (\n`
+      dictionary.allTokens.map(tkn => {
+        if (tkn.path[1] === x) {
+          strTokens += `\t\t'${tkn.attributes.item}' :( \n`
+          let styles = tkn.value
+          for (let style in styles) {
+            let styleVal = styles[style]
 
-          value = `{
-          font-family: ${ttVal.fontFamily};
-          font-weight: ${ttVal.fontWeight};
-          font-size: ${ttVal.fontSize};
-          line-height: ${ttVal.lineHeight}; 
-        }`
+            if (styleVal !== "") {
+              if (dictionary.usesReference(tkn.original.value)) {
+                // Note: make sure to use `token.original.value` because
+                // `token.value` is already resolved at this point.
+                const refs = dictionary.getReferences(tkn.original.value)
+                refs.forEach(ref => {
+                  styleVal = styleVal.replace(ref.value, function () {
+                    return `$${ref.name}`
+                  })
+                })
+              }
 
-          if (dictionary.usesReference(token.original.value)) {
-            // Note: make sure to use `token.original.value` because
-            // `token.value` is already resolved at this point.
-            const refs = dictionary.getReferences(token.original.value)
-            refs.forEach(ref => {
-              value = value.replace(ref.value, function () {
-                return `$${ref.name}`
-              })
-            })
+              strTokens += `\t\t\t ${kebabize(style)} : ${styleVal}, \n`
+            }
           }
-          return `.${token.name} ${value}`
-        })
-        .join(`\n`) +
-      `\n)`
-    )
+          strTokens += `    ), \n`
+        }
+      })
+      strTokens += `  ), \n`
+    }
+    strTokens += `); \n`
+    // console.log(strTokens)
+    return strTokens
   },
 })
 
@@ -139,6 +221,25 @@ const myStyleDictionary = StyleDictionary.extend({
           options: {
             outputReferences: true,
             fileHeader: "mySPHHeader",
+          },
+        },
+      ],
+    },
+    "scss/colorBaseToken": {
+      transformGroup: "scss",
+      buildPath: "src/scss/",
+      files: [
+        {
+          destination: `_color-base-tokens.scss`,
+          format: "ctBase",
+          options: {
+            outputReferences: true,
+            fileHeader: "mySPHHeader",
+          },
+          filter: {
+            attributes: {
+              category: "colorTokens",
+            },
           },
         },
       ],
@@ -187,7 +288,7 @@ const myStyleDictionary = StyleDictionary.extend({
       files: [
         {
           destination: `_ctokens.scss`,
-          format: "scss/variables",
+          format: "ctFormat",
           options: {
             outputReferences: true,
             fileHeader: "mySPHHeader",

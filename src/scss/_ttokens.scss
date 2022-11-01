@@ -1,68 +1,142 @@
-// $theme: (
-.tt-display-title {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: $size-font-6;
-  line-height: $type-line-heights-140;
-}
-.tt-section-title {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: 36;
-  line-height: 140%;
-}
-.tt-screen-title {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: 36;
-  line-height: 140%;
-}
-.tt-blockquote {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: 20;
-  line-height: 115%;
-}
-.tt-subtitle {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-regular;
-  font-size: 18;
-  line-height: 115%;
-}
-.tt-button {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: 18;
-  line-height: 115%;
-}
-.tt-social-button {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: $size-font-3;
-  line-height: $type-line-heights-115;
-}
-.tt-emphasis-text {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: $size-font-2;
-  line-height: $type-line-heights-115;
-}
-.tt-body-text {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-regular;
-  font-size: $size-font-2;
-  line-height: $type-line-heights-115;
-}
-.tt-tagline {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-regular;
-  font-size: 14;
-  line-height: 115%;
-}
-.tt-function-text {
-  font-family: $type-font-families-source-sans-pro;
-  font-weight: $type-font-weights-semibold;
-  font-size: $size-font-0;
-  line-height: $type-line-heights-115;
-}
-// )
+$tThemes: ( 
+	st: (
+		'display-title' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : $type-line-heights-140, 
+			 font-size : $size-font-6, 
+    ), 
+		'section-title' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 140%, 
+			 font-size : 36, 
+			 text-case : $type-text-cases-normal, 
+    ), 
+		'screen-title' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 140%, 
+			 font-size : 24, 
+    ), 
+		'blockquote' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 115%, 
+			 font-size : 18, 
+    ), 
+		'subtitle' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-regular, 
+			 line-height : 115%, 
+			 font-size : 18, 
+    ), 
+		'button' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 115%, 
+			 font-size : 18, 
+    ), 
+		'social-button' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 115%, 
+			 font-size : 18, 
+    ), 
+		'emphasis-text' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 115%, 
+			 font-size : 16, 
+    ), 
+		'body-text' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-regular, 
+			 line-height : 15%, 
+			 font-size : 16, 
+    ), 
+		'tagline' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-regular, 
+			 line-height : 115%, 
+			 font-size : 14, 
+    ), 
+		'function-text' :( 
+			 font-family : $type-font-families-curator-head-st-bold, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : $type-line-heights-115, 
+			 font-size : $size-font-0, 
+			 text-case : $type-text-cases-uppercase, 
+    ), 
+  ), 
+	mysph: (
+		'display-title' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : $type-line-heights-140, 
+			 font-size : $size-font-6, 
+			 text-case : $type-text-cases-normal, 
+    ), 
+		'section-title' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 140%, 
+			 font-size : 36, 
+    ), 
+		'screen-title' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 140%, 
+			 font-size : 36, 
+    ), 
+		'blockquote' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 115%, 
+			 font-size : 20, 
+    ), 
+		'subtitle' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-regular, 
+			 line-height : 115%, 
+			 font-size : 18, 
+    ), 
+		'button' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : 115%, 
+			 font-size : 18, 
+    ), 
+		'social-button' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : $type-line-heights-115, 
+			 font-size : $size-font-3, 
+    ), 
+		'emphasis-text' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : $type-line-heights-115, 
+			 font-size : $size-font-2, 
+    ), 
+		'body-text' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-regular, 
+			 line-height : $type-line-heights-115, 
+			 font-size : $size-font-2, 
+    ), 
+		'tagline' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-regular, 
+			 line-height : 115%, 
+			 font-size : 14, 
+    ), 
+		'function-text' :( 
+			 font-family : $type-font-families-source-sans-pro, 
+			 font-weight : $type-font-weights-semibold, 
+			 line-height : $type-line-heights-115, 
+			 font-size : $size-font-0, 
+			 text-case : $type-text-cases-uppercase, 
+    ), 
+  ), 
+); 

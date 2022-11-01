@@ -11,8 +11,7 @@ export default function Home() {
   return (
     <Layout>
       <Main>
-        <h1>Index page</h1>
-        <p>Welcome to my demo of gatsby Documentation Pages.</p>
+        <h1>Colors</h1>
         <Card>This is a inner card</Card>
       </Main>
     </Layout>

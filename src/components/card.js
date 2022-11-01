@@ -1,9 +1,14 @@
 import React from "react"
 
+const pubCode = "mysph"
+const colorMode = "standard"
+
 export default function Card({ children }) {
   return (
-    <div className="card">
-      <h1 className="tt-screen-title">{children}</h1>
+    <div className={`card ${pubCode} theme--${pubCode}-${colorMode}`}>
+      <div className="wrapper">
+        <h3 className="screen-title ">{children}</h3>
+      </div>
     </div>
   )
 }

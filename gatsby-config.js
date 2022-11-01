@@ -7,9 +7,9 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Gatsby Documentation`,
+    title: `A Design System Manager POC`,
     siteUrl: `https://www.gatsbyjs.com`,
-    description: `testing out gatsby for DSM`,
+    description: `A proof of concept for DSM`,
   },
   plugins: [
     `gatsby-transformer-json`,

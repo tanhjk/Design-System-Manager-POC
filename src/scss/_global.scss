@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include themed() {
+    color: t($core-text);
+    background-color: t($background);
+  }
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  @include themed() {
+    color: t($core-text);
+    background-color: t($background);
+  }
+}
+
+.card {
+  box-shadow: $shadow-card;
+
+  h1 {
+    color: $highlight-text;
+  }
+}
+
+//desktop
+@media screen and (min-width: 513px) {
+  @each $theme, $map in $tThemes {
+    @each $token, $lib in $map {
+      .#{$theme} .#{$token} {
+        @each $att, $val in $lib {
+          #{$att}: #{$val};
+        }
+      }
+    }
+  }
+}
+
+// //mobile
+// @media screen and (max-width: 512px) {
+//   @each $theme, $map in $themesMob {
+//     @each $token, $lib in $map {
+//       .#{$theme} .#{$token} {
+//         @each $att, $val in $lib {
+//           #{$att}: #{$val};
+//         }
+//       }
+//     }
+//   }
+// }
