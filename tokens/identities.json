@@ -27,16 +27,16 @@
         "value": "#808080",
         "type": "color"
       },
+      "grey-400": {
+        "value": "#b1b1b1",
+        "type": "color"
+      },
       "grey-100": {
         "value": "#f5f5f5",
         "type": "color"
       },
       "white": {
         "value": "#fff",
-        "type": "color"
-      },
-      "grey-400": {
-        "value": "#b1b1b1",
         "type": "color"
       }
     },
