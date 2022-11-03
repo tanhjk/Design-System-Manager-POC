@@ -15,7 +15,7 @@
           "type": "color"
         },
         "linkText": {
-          "value": "{color.brand.mint}",
+          "value": "{color.color.mint}",
           "type": "color"
         },
         "hoverLinkText": {
