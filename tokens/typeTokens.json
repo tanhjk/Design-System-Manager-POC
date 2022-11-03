@@ -4,7 +4,7 @@
       "display-title": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.6}",
           "letterSpacing": "",
@@ -17,7 +17,7 @@
       "section-title": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.5}",
           "letterSpacing": "",
@@ -30,7 +30,7 @@
       "screen-title": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.5}",
           "letterSpacing": "",
@@ -43,7 +43,7 @@
       "blockquote": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.4}",
           "letterSpacing": "",
@@ -56,7 +56,7 @@
       "subtitle": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.140}",
           "fontSize": "{size.font.3}",
           "letterSpacing": "",
@@ -69,7 +69,7 @@
       "button": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.3}",
           "letterSpacing": "",
@@ -82,7 +82,7 @@
       "social-button": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.3}",
           "letterSpacing": "",
@@ -95,7 +95,7 @@
       "emphasis-text": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.2}",
           "letterSpacing": "",
@@ -134,7 +134,7 @@
       "function-text": {
         "value": {
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
-          "fontWeight": "{type.fontWeights.semibold}",
+          "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
           "fontSize": "{size.font.0}",
           "letterSpacing": "",

@@ -12,6 +12,10 @@
       "blue-200": {
         "value": "#c6cfe9",
         "type": "color"
+      },
+      "mint": {
+        "value": "#6edec4",
+        "type": "color"
       }
     },
     "greyscale": {
@@ -123,6 +127,17 @@
         "type": "dropShadow"
       },
       "type": "boxShadow"
+    },
+    "image": {
+      "value": {
+        "x": "5px",
+        "y": "5px",
+        "blur": "15px",
+        "spread": "30px",
+        "color": "{color.greyscale.grey-500}",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
     }
   },
   "type": {
@@ -141,12 +156,16 @@
         "value": "300",
         "type": "fontWeights"
       },
-      "semibold": {
+      "semibold600": {
         "value": "600",
         "type": "fontWeights"
       },
       "bold": {
         "value": "700",
+        "type": "fontWeights"
+      },
+      "semibold500": {
+        "value": "500",
         "type": "fontWeights"
       }
     },
