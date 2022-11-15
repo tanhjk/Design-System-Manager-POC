@@ -16,6 +16,10 @@
       "mint": {
         "value": "#6edec4",
         "type": "color"
+      },
+      "red": {
+        "value": "#f85555",
+        "type": "color"
       }
     },
     "greyscale": {
