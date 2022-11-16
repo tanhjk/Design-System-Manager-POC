@@ -3,12 +3,11 @@ import React from "react"
 const pubCode = "mysph"
 const colorMode = "standard"
 
-export default function Card({ children }) {
+export default function Card({ data, children }) {
+  console.log(children, data)
   return (
-    <div className={`card ${pubCode} theme--${pubCode}-${colorMode}`}>
-      <div className="wrapper">
-        <h3 className="screen-title ">{children}</h3>
-      </div>
+    <div className={`card ${pubCode} theme--${pubCode}-${colorMode}`} id={data}>
+      <div className="card-wrapper"> {children}</div>
     </div>
   )
 }

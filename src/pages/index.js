@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/layout-full-width"
 import styled from "styled-components"
 import Card from "../components/card"
 
@@ -11,8 +11,12 @@ export default function Home() {
   return (
     <Layout>
       <Main>
-        <h1>Colors</h1>
-        <Card>This is a inner card</Card>
+        <div class="center-view">
+          <div class="view-container">
+            <h1>SPH Commerce Design System Manager</h1>
+            <p className="subtitle">Proof of concept Demo</p>
+          </div>
+        </div>
       </Main>
     </Layout>
   )

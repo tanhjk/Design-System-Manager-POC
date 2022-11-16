@@ -67,13 +67,13 @@ StyleDictionary.registerFormat({
         const ttVal = token.value
         value =
           ttVal.x +
-          "px " +
+          " " +
           ttVal.y +
-          "px " +
+          " " +
           ttVal.blur +
-          "px " +
+          " " +
           ttVal.spread +
-          "px " +
+          " " +
           ttVal.color
 
         return `$${token.name} : ${value};`
@@ -178,8 +178,11 @@ StyleDictionary.registerFormat({
           strTokens += `\t\t'${tkn.attributes.item}' :( \n`
           let styles = tkn.value
           for (let style in styles) {
+            console.log(style)
+
             let styleVal = styles[style]
 
+            // console.log(styleVal)
             if (styleVal !== "") {
               if (dictionary.usesReference(tkn.original.value)) {
                 // Note: make sure to use `token.original.value` because
@@ -191,6 +194,7 @@ StyleDictionary.registerFormat({
                   })
                 })
               }
+              style = style.replace("textCase", "textTransform")
 
               strTokens += `\t\t\t ${kebabize(style)} : ${styleVal}, \n`
             }
@@ -211,7 +215,14 @@ const myStyleDictionary = StyleDictionary.extend({
   source: ["tokens/**/*.json"],
   platforms: {
     "scss/base": {
-      transformGroup: "scss",
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "time/seconds",
+        "content/icon",
+        "size/px",
+        "color/css",
+      ],
       buildPath: "src/scss/",
       files: [
         {
@@ -302,7 +313,14 @@ const myStyleDictionary = StyleDictionary.extend({
       ],
     },
     "scss/ttoken": {
-      transformGroup: "scss",
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "time/seconds",
+        "content/icon",
+        "size/px",
+        "color/css",
+      ],
       buildPath: "src/scss/",
       files: [
         {
@@ -316,20 +334,6 @@ const myStyleDictionary = StyleDictionary.extend({
           options: {
             outputReferences: true,
             fileHeader: "TTHeader",
-          },
-        },
-      ],
-    },
-    "scss/all": {
-      transformGroup: "scss",
-      buildPath: "src/scss/",
-      files: [
-        {
-          destination: `all.scss`,
-          format: "scss/variables",
-          options: {
-            outputReferences: true,
-            fileHeader: "mySPHHeader",
           },
         },
       ],

@@ -29,12 +29,113 @@ body {
     background-color: t($background);
   }
 }
+.section {
+  padding: 1rem 0;
+  h3 {
+    text-transform: capitalize;
+  }
+}
+.section-header {
+  padding: 1rem;
+  background-color: $color-greyscale-grey-500;
+  h1 {
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    color: $color-greyscale-grey-100;
+  }
+}
+.center-view {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+
+  .view-container {
+    display: inline-block;
+  }
+}
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      @include themed() {
+        color: t($link-text);
+      }
+    }
+  }
+}
 
 .card {
   box-shadow: $shadow-card;
+  display: inline-block;
+  h1 {
+    color: $highlight-text;
+  }
+
+  .card-wrapper {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+.color-type {
+  text-align: center;
+  // box-shadow: $shadow-card;
+  display: inline-block;
+  border: solid 1px $color-greyscale-grey-400;
+  border-radius: $size-border-radius-card * 20;
+  padding: $spacing-md;
+  margin-right: $spacing-md;
 
   h1 {
     color: $highlight-text;
+  }
+}
+
+.type-type {
+  display: inline-block;
+
+  padding: $spacing-md;
+  margin-right: $spacing-md;
+}
+
+.color-chip {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  margin: 5px auto 16px;
+}
+
+.type-fontstyle {
+  border: solid 1px $color-greyscale-grey-400;
+  border-radius: $size-border-radius-form;
+  padding: 16px 0;
+}
+
+.stylesheet {
+  display: flex;
+  width: 100%;
+  margin: 0 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+.sheet-item {
+  margin-right: 16px;
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
 

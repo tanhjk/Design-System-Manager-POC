@@ -1,8 +1,8 @@
 import React from "react"
+import "../scss/style.scss"
 import Header from "./header"
 import DirectoryTree from "./sidebar/directoryTree"
 import styled from "styled-components"
-import "../scss/style.scss"
 
 const Container = styled.div`
   width: 100%;
@@ -18,7 +18,7 @@ export default function Home({ children }) {
       <Header />
       <Container className="fluid-container">
         <div className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-3 col-md-2">
             <DirectoryTree />
           </div>
           <div className="col-sm-9">

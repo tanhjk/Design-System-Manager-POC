@@ -1,12 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
 import Logo from "../images/sph-rbg.png"
 import styled from "styled-components"
-import { graphql } from "gatsby"
 
 const HeaderBar = styled.header`
   width: 100%;
   display: flex;
   align-items: flex-start;
+  justify-items: center;
   padding: 2rem 2rem;
 `
 const Title = styled.header`
@@ -28,24 +29,35 @@ export default function Header(data) {
           <LogoStyle src={Logo} className="logo" alt="sph logo" />
           <Title>
             <h1 className="highlightText screen-title">
-              {data.site.siteMetadata.description}
+              A Design System Manager POC
             </h1>
-            <p className="subtitle">{data.site.siteMetadata.description}</p>
+            <p className="subtitle">A proof of concept for DSM</p>
           </Title>
+          <ul className="main-menu">
+            <li>
+              <Link to="/" className="emphasis-text">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/identities/" className="emphasis-text">
+                Identities
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/color-tokens/" className="emphasis-text">
+                Color Tokens
+              </Link>
+            </li>
+            <li>
+              <Link to="/type-tokens/" className="emphasis-text">
+                Type Tokens
+              </Link>
+            </li>
+          </ul>
         </HeaderBar>
       </div>
     </div>
   )
 }
-
-export const query = graphql`
-  query HomeQuery {
-    site {
-      siteMetadata {
-        description
-        siteUrl
-        title
-      }
-    }
-  }
-`

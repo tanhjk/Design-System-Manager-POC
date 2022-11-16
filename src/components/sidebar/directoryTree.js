@@ -1,6 +1,7 @@
 import React from "react"
-import { graphql } from "gatsby"
 import styled from "styled-components"
+import Identities from "../../../tokens/identities.json"
+import SectionHeader from "./sectionHeader"
 
 const SideBarContainer = styled.aside`
   display: inline-block;
@@ -9,29 +10,17 @@ const SideBarContainer = styled.aside`
   border-right: solid 1px grey;
   padding: 0;
 `
-
-export default function DirectoryTree(data) {
+export default function DirectoryTree({ children }) {
+  const colors = Identities.color
   return (
     <SideBarContainer>
-      <h4 className="blockquote">This is the sidebar</h4>
-      <ul>
-        <li>{console.log(data.allDataJson)}</li>
-      </ul>
+      {Object.keys(colors).map(key => {
+        return (
+          <div>
+            <SectionHeader title={key}></SectionHeader>
+          </div>
+        )
+      })}
     </SideBarContainer>
   )
 }
-
-export const query = graphql`
-  query MyQuery {
-    allDataJson {
-      nodes {
-        color {
-          blue_200 {
-            value
-            type
-          }
-        }
-      }
-    }
-  }
-`
