@@ -20,6 +20,10 @@
       "red": {
         "value": "#f85555",
         "type": "color"
+      },
+      "purple": {
+        "value": "#b757e0",
+        "type": "color"
       }
     },
     "greyscale": {
