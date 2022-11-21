@@ -1,7 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
-import Identities from "../../../tokens/identities.json"
-import SectionHeader from "./sectionHeader"
 
 const SideBarContainer = styled.aside`
   display: inline-block;
@@ -11,16 +10,26 @@ const SideBarContainer = styled.aside`
   padding: 0;
 `
 export default function DirectoryTree({ children }) {
-  const colors = Identities.color
   return (
     <SideBarContainer>
-      {Object.keys(colors).map(key => {
-        return (
-          <div>
-            <SectionHeader title={key}></SectionHeader>
-          </div>
-        )
-      })}
+      <ul className="sidebar-menu">
+        <li>
+          <Link to="/identities/" className="emphasis-text">
+            Identities
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/color-tokens/" className="emphasis-text">
+            Color Tokens
+          </Link>
+        </li>
+        <li>
+          <Link to="/type-tokens/" className="emphasis-text">
+            Type Tokens
+          </Link>
+        </li>
+      </ul>
     </SideBarContainer>
   )
 }

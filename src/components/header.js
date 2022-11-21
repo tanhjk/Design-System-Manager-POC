@@ -41,18 +41,17 @@ export default function Header(data) {
             </li>
             <li>
               <Link to="/identities/" className="emphasis-text">
-                Identities
+                Documentations
               </Link>
             </li>
-
             <li>
               <Link to="/color-tokens/" className="emphasis-text">
-                Color Tokens
+                Download
               </Link>
             </li>
             <li>
               <Link to="/type-tokens/" className="emphasis-text">
-                Type Tokens
+                SPH Design
               </Link>
             </li>
           </ul>

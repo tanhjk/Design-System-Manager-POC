@@ -4,7 +4,7 @@ import ColorTokens from "../../tokens/colorTokens-light.json"
 import Identities from "../../tokens/identities.json"
 import TokenColor from "../components/tokenColor"
 
-export default function colorTokens({ ct }) {
+export default function colorTokens({}) {
   const colors = ColorTokens.colorTokens.mysph.light
 
   function refColor(rC, obj) {

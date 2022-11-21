@@ -5,7 +5,7 @@ const pubCode = "mysph"
 const colorMode = "standard"
 
 export default function tokenType({ TypeNm, fontStyles, objLib }) {
-  const kebabize = str => {
+  function kebabize(str) {
     return str
       .split("")
       .map((letter, idx) => {

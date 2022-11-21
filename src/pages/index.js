@@ -13,7 +13,9 @@ export default function Home() {
       <Main>
         <div class="center-view">
           <div class="view-container">
-            <h1>SPH Commerce Design System Manager</h1>
+            <h1 className="display-title">
+              SPH Commerce Design System Manager
+            </h1>
             <p className="subtitle">Proof of concept Demo</p>
           </div>
         </div>
