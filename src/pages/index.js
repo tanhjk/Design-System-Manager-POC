@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout-full-width"
 import styled from "styled-components"
-import Card from "../components/card"
 
 const Main = styled.main`
   padding: 0 2rem;

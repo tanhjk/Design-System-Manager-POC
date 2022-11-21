@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import ColorTokens from "../../tokens/colorTokens-light.json"
-import Identities from "../../tokens/identities.json"
 import TokenColor from "../components/tokenColor"
+import CT from "../../tokens/colorTokens-light.json"
+import Identities from "../../tokens/identities.json"
 
-export default function colorTokens({}) {
-  const colors = ColorTokens.colorTokens.mysph.light
+export default function ColorTokens({ children }) {
+  const colors = CT.colorTokens.mysph.light
 
   function refColor(rC, obj) {
     const lastVal = rC.split(".").at(-1)

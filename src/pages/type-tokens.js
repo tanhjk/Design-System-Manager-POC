@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import TypeTokens from "../../tokens/typeTokens.json"
+import TT from "../../tokens/typeTokens.json"
 import TokenType from "../components/tokenType"
 
-export default function typeTokens({ data }) {
-  const ttTokens = TypeTokens.tt.mysph
+export default function TypeTokens({ children }) {
+  const ttTokens = TT.tt.mysph
 
   return (
     <Layout>
@@ -15,9 +15,6 @@ export default function typeTokens({ data }) {
         <div className="section">
           {Object.keys(ttTokens).map(tkey => {
             const typeVal = ttTokens[tkey].value
-
-            console.log(typeVal)
-            // const typeVal = typeKey.value.slice(1, -1)
 
             return (
               <TokenType

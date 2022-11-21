@@ -36,6 +36,9 @@ export default function tokenType({ TypeNm, fontStyles, objLib }) {
       case 4:
         console.log("4")
         break
+      default:
+        console.log("1")
+        break
     }
 
     return objVal
@@ -47,7 +50,7 @@ export default function tokenType({ TypeNm, fontStyles, objLib }) {
         {Object.keys(fontStyles).map(style => {
           let styleValue = fontStyles[style]
           styleValue = styleValue.slice(1, -1)
-          if (styleValue != "") {
+          if (styleValue !== "") {
             return (
               <div className="stylesheet">
                 <div className="sheet-item">
@@ -62,6 +65,7 @@ export default function tokenType({ TypeNm, fontStyles, objLib }) {
               </div>
             )
           }
+          return true
         })}
       </div>
     </div>
