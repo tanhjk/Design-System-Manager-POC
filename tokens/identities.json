@@ -60,6 +60,10 @@
       "st-turquoise": {
         "value": "#13fdfd",
         "type": "color"
+      },
+      "blue": {
+        "value": "#56acf7",
+        "type": "color"
       }
     }
   },
