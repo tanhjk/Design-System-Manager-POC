@@ -31,6 +31,10 @@
         "value": "#333333",
         "type": "color"
       },
+      "grey-700": {
+        "value": "#555",
+        "type": "color"
+      },
       "grey-500": {
         "value": "#808080",
         "type": "color"
