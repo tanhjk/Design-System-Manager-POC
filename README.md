@@ -23,17 +23,21 @@ Required libraries to be installed
 
     ```shell
     # clone a copy of DSM POC into your desire folder
-    git clone https://github.com/tanhjk/Design-System-Manager-POC.git
+    git clone https://github.com/tanhjk/design-system-manager-poc.git
     ```
 
     Once you are in your project folder, run
 
     ```shell
-    cd Design-System-Manager-POC/
+    cd design-system-manager-poc/
     npm install
     ```
 
-2.  **Start developing.**
+2.  **Step Figma Tokens.** [Figma Token Plugin](https://www.figma.com/community/plugin/843461159747178978)
+
+    Use this [guide](https://docs.tokens.studio/sync/github) to setup your Figma Token plugins to point to `/tokens` folder
+
+3.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -41,16 +45,16 @@ Required libraries to be installed
     npm run start
     ```
 
-3.  **To convert.**
+4.  **To convert.**
 
-    Convert Design Tokens into usable codes for development
+    Convert Design Tokens using [Style Dictionary](https://amzn.github.io/style-dictionary/#/).
 
     ```shell
     # JSON to SCSS
     npm run convert
     ```
 
-4.  **Open the source code and start editing!**
+5.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
