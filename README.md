@@ -34,6 +34,7 @@ Required libraries to be installed
     ```
 
 2.  **Step Figma Tokens.** [Figma Token Plugin](https://www.figma.com/community/plugin/843461159747178978)
+    ![alt text](figma-token-ss.png)
 
     Use this [guide](https://docs.tokens.studio/sync/github) to setup your Figma Token plugins to point to `/tokens` folder
 
