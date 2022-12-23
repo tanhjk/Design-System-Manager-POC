@@ -24,6 +24,10 @@
       "purple": {
         "value": "#be17cd",
         "type": "color"
+      },
+      "pink": {
+        "value": "#ff78f3",
+        "type": "color"
       }
     },
     "greyscale": {
