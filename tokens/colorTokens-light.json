@@ -10,7 +10,7 @@
           "value": "{color.greyscale.grey-900}",
           "type": "color"
         },
-        "inverse-text": {
+        "inverseText": {
           "value": "{color.greyscale.grey-100}",
           "type": "color"
         },
