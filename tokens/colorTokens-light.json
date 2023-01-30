@@ -31,7 +31,7 @@
           "type": "color"
         },
         "alt-background": {
-          "value": "#0c2b57",
+          "value": "{color.color.blue-900}",
           "type": "color"
         }
       }
