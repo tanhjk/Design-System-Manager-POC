@@ -10,6 +10,10 @@
           "value": "{color.greyscale.grey-900}",
           "type": "color"
         },
+        "inverse-text": {
+          "value": "{color.greyscale.grey-100}",
+          "type": "color"
+        },
         "mutedText": {
           "value": "{color.greyscale.grey-500}",
           "type": "color"
@@ -24,6 +28,10 @@
         },
         "background": {
           "value": "{color.greyscale.grey-100}",
+          "type": "color"
+        },
+        "alt-background": {
+          "value": "#0c2b57",
           "type": "color"
         }
       }
