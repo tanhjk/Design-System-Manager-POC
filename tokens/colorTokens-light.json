@@ -30,7 +30,7 @@
           "value": "{color.greyscale.grey-100}",
           "type": "color"
         },
-        "alt-background": {
+        "altBackground": {
           "value": "{color.color.blue-900}",
           "type": "color"
         }
