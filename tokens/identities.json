@@ -1,6 +1,10 @@
 {
   "color": {
     "color": {
+      "blue-900": {
+        "value": "0A1451",
+        "type": "color"
+      },
       "blue-700": {
         "value": "#3043ac",
         "type": "color"
@@ -19,14 +23,6 @@
       },
       "red": {
         "value": "#f85555",
-        "type": "color"
-      },
-      "purple": {
-        "value": "#be17cd",
-        "type": "color"
-      },
-      "pink": {
-        "value": "#ff78f3",
         "type": "color"
       }
     },
