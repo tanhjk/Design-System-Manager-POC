@@ -14,8 +14,10 @@ export default function tokenColor({ colorNm, colorValue }) {
           backgroundColor: colorValue,
         }}
       ></div>
-      <p className="emphasis-text">${colorNm}</p>
-      <p className="body-text">{colorValue}</p>
+      <div className="token-detail">
+        <p className="button">${colorNm}</p>
+        <p className="body-text">Hex: {colorValue}</p>
+      </div>
     </div>
   )
 }

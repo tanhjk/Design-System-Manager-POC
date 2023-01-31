@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-json`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

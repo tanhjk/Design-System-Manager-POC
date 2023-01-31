@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import TokenColor from "../components/tokenColor"
+import DirectoryTree from "../components/sidebar/directoryTree"
 import CT from "../../tokens/colorTokens-light.json"
 import Identities from "../../tokens/identities.json"
 
@@ -15,8 +16,15 @@ export default function ColorTokens({ children }) {
   }
   return (
     <Layout>
-      <main>
+      <div className="col-sm-3 col-md-2">
+        <DirectoryTree link="color" />
+      </div>
+      <div className="col-sm-9 col-md-10">
         <h1>Color Tokens</h1>
+        <p className="body-text">
+          Color tokens are used to define the use of the color based on the
+          function of the token
+        </p>
         <hr></hr>
 
         <div className="section">
@@ -32,7 +40,7 @@ export default function ColorTokens({ children }) {
             )
           })}
         </div>
-      </main>
+      </div>
     </Layout>
   )
 }
