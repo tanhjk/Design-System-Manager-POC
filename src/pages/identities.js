@@ -23,7 +23,7 @@ export default function identities({ children }) {
           const colorKey = colors[ckey]
           return (
             <div className="section">
-              <h3 className="screen-title">{ckey}</h3>
+              <h3 className="screen-title sentence">{ckey}</h3>
               {Object.keys(colorKey).map((colorNm, index) => {
                 const colorValue = colorKey[colorNm].value
                 console.log(colorValue)

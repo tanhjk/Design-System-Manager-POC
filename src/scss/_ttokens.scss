@@ -76,21 +76,21 @@ $tThemes: (
 			 font-weight : $type-font-weights-semibold600, 
 			 line-height : $type-line-heights-115, 
 			 font-size : $size-font-6, 
-			 text-transform : $type-text-cases-uppercase, 
+			 text-transform : $type-text-cases-normal, 
     ), 
 		'section-title' :( 
 			 font-family : $type-font-families-source-sans-pro, 
 			 font-weight : $type-font-weights-semibold600, 
 			 line-height : $type-line-heights-115, 
 			 font-size : $size-font-5, 
-			 text-transform : $type-text-cases-uppercase, 
+			 text-transform : $type-text-cases-normal, 
     ), 
 		'screen-title' :( 
 			 font-family : $type-font-families-source-sans-pro, 
 			 font-weight : $type-font-weights-semibold600, 
 			 line-height : $type-line-heights-115, 
 			 font-size : $size-font-5, 
-			 text-transform : $type-text-cases-uppercase, 
+			 text-transform : $type-text-cases-normal, 
     ), 
 		'blockquote' :( 
 			 font-family : $type-font-families-source-sans-pro, 
@@ -110,6 +110,7 @@ $tThemes: (
 			 font-weight : $type-font-weights-semibold600, 
 			 line-height : $type-line-heights-115, 
 			 font-size : $size-font-3, 
+			 text-transform : $type-text-cases-normal, 
     ), 
 		'social-button' :( 
 			 font-family : $type-font-families-source-sans-pro, 

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Logo from "../images/LUNA-hori-white@2x.png"
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -25,24 +24,29 @@ export default function Header(data) {
           <LogoStyle src={Logo} className="logo" alt="sph logo" />
           <ul className="main-menu">
             <li>
-              <Link to="/" className="emphasis-text">
+              <AniLink fade duration={0.5} to="/" className="emphasis-text">
                 Home
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link to="/identities/" className="emphasis-text">
+              <AniLink
+                fade
+                duration={0.5}
+                to="/identities/"
+                className="emphasis-text"
+              >
                 Documentations
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link to="/color-tokens/" className="emphasis-text">
+              <AniLink fade duration={0.5} to="/#/" className="emphasis-text">
                 Download
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link to="/type-tokens/" className="emphasis-text">
+              <AniLink fade duration={0.5} to="/#/" className="emphasis-text">
                 SPH Design
-              </Link>
+              </AniLink>
             </li>
           </ul>
         </HeaderBar>
