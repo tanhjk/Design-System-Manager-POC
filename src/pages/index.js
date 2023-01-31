@@ -12,11 +12,6 @@ const Main = styled.main`
 export default function Home() {
   return (
     <Layout>
-<<<<<<< Updated upstream
-      <Main>
-        <h1>Index page</h1>
-        <p>Welcome to my demo of gatsby Documentation Pages.</p>
-=======
       <Main className={`${pubCode} theme--${pubCode}-${colorMode}`}>
         <div className="center-view">
           <div className="view-container">
@@ -26,7 +21,6 @@ export default function Home() {
             <p className="subtitle">Proof of concept Demo</p>
           </div>
         </div>
->>>>>>> Stashed changes
       </Main>
     </Layout>
   )

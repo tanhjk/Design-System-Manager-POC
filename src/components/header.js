@@ -1,10 +1,6 @@
 import React from "react"
-<<<<<<< Updated upstream
-import Logo from "../images/sph-rbg.png"
-=======
 import { Link } from "gatsby"
 import Logo from "../images/LUNA-hori-white@2x.png"
->>>>>>> Stashed changes
 import styled from "styled-components"
 import gatsbyConfig from "../../gatsby-config"
 
@@ -15,10 +11,6 @@ const HeaderBar = styled.header`
   padding: 2rem 2rem;
   position: absolute;
 `
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 const LogoStyle = styled.img`
   width: auto;
   height: 48px;
@@ -27,15 +19,6 @@ const LogoStyle = styled.img`
 
 export default function Header() {
   return (
-<<<<<<< Updated upstream
-    <HeaderBar>
-      <LogoStyle src={Logo} className="logo" alt="sph logo" />
-      <h1 className="highlightText screen-title">
-        {gatsbyConfig.siteMetadata.title} |{" "}
-        {gatsbyConfig.siteMetadata.description}
-      </h1>
-    </HeaderBar>
-=======
     <div className="fluid-container">
       <div className="row">
         <HeaderBar className="col-12">
@@ -65,6 +48,5 @@ export default function Header() {
         </HeaderBar>
       </div>
     </div>
->>>>>>> Stashed changes
   )
 }
