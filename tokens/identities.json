@@ -123,8 +123,12 @@
       "value": "8px",
       "type": "spacing"
     },
+    "sm": {
+      "value": "16",
+      "type": "spacing"
+    },
     "md": {
-      "value": "16px",
+      "value": "18px",
       "type": "spacing"
     },
     "lg": {

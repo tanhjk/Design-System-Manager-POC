@@ -6,6 +6,9 @@ import HeroImg from "../images/graphic-1.svg"
 // const pubCode = "mysph"
 // const colorMode = "standard"
 
+const pubCode = "mysph"
+const colorMode = "standard"
+
 const Main = styled.main`
   padding: 0;
 `

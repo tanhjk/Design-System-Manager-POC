@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Logo from "../images/LUNA-hori-white@2x.png"
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -6,12 +7,9 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 const HeaderBar = styled.header`
   width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-items: center;
-  padding: 24px 24px;
+  align-items: center;
+  padding: 2rem 2rem;
   position: absolute;
-  top: 0;
-  left: 0;
 `
 const LogoStyle = styled.img`
   width: auto;
@@ -23,33 +21,28 @@ export default function Header(data) {
   return (
     <div className="fluid-container">
       <div className="row">
-        <HeaderBar className="col-12 darken">
+        <HeaderBar className="col-12">
           <LogoStyle src={Logo} className="logo" alt="sph logo" />
           <ul className="main-menu">
             <li>
-              <AniLink fade duration={0.5} to="/" className="emphasis-text">
+              <Link to="/" className="emphasis-text">
                 Home
-              </AniLink>
+              </Link>
             </li>
             <li>
-              <AniLink
-                fade
-                duration={0.5}
-                to="/identities/"
-                className="emphasis-text"
-              >
+              <Link to="/identities/" className="emphasis-text">
                 Documentations
-              </AniLink>
+              </Link>
             </li>
             <li>
-              <AniLink fade duration={0.5} to="#" className="emphasis-text">
+              <Link to="/color-tokens/" className="emphasis-text">
                 Download
-              </AniLink>
+              </Link>
             </li>
             <li>
-              <AniLink fade duration={0.5} to="#" className="emphasis-text">
+              <Link to="/type-tokens/" className="emphasis-text">
                 SPH Design
-              </AniLink>
+              </Link>
             </li>
           </ul>
         </HeaderBar>

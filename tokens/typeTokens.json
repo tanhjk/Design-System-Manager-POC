@@ -9,7 +9,7 @@
           "fontSize": "{size.font.6}",
           "letterSpacing": "",
           "paragraphSpacing": "",
-          "textCase": "{type.textCases.Uppercase}",
+          "textCase": "{type.textCases.normal}",
           "textDecoration": ""
         },
         "type": "typography"
@@ -22,7 +22,7 @@
           "fontSize": "{size.font.5}",
           "letterSpacing": "",
           "paragraphSpacing": "",
-          "textCase": "{type.textCases.Uppercase}",
+          "textCase": "{type.textCases.normal}",
           "textDecoration": ""
         },
         "type": "typography"
@@ -35,7 +35,7 @@
           "fontSize": "{size.font.5}",
           "letterSpacing": "",
           "paragraphSpacing": "",
-          "textCase": "{type.textCases.Uppercase}",
+          "textCase": "{type.textCases.normal}",
           "textDecoration": ""
         },
         "type": "typography"
@@ -74,7 +74,7 @@
           "fontSize": "{size.font.3}",
           "letterSpacing": "",
           "paragraphSpacing": "",
-          "textCase": "",
+          "textCase": "{type.textCases.normal}",
           "textDecoration": ""
         },
         "type": "typography"
