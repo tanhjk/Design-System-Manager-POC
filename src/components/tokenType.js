@@ -45,28 +45,37 @@ export default function tokenType({ TypeNm, fontStyles, objLib }) {
   }
   return (
     <div className={`type-type  ${pubCode} theme--${pubCode}-${colorMode}`}>
-      <p className={TypeNm}>${TypeNm}</p>
-      <div className="type-fontstyle">
-        {Object.keys(fontStyles).map(style => {
-          let styleValue = fontStyles[style]
-          styleValue = styleValue.slice(1, -1)
-          if (styleValue !== "") {
-            return (
-              <div className="stylesheet">
-                <div className="sheet-item">
-                  <p>
-                    {kebabize(style.replace("textCase", "textTransform"))} :{" "}
-                  </p>
+      <div className="type-fontstyle ">
+        <h4>${TypeNm}</h4>
+      </div>
+
+      <div className="type-details">
+        <p className={TypeNm}>The quick brown fox jumps over the lazy dog</p>
+        <div className="type-attr">
+          {Object.keys(fontStyles).map(style => {
+            let styleValue = fontStyles[style]
+            styleValue = styleValue.slice(1, -1)
+            if (styleValue !== "") {
+              return (
+                <div className="stylesheet">
+                  <div className="sheet-item">
+                    <p className="body-text">
+                      {kebabize(style.replace("textCase", "textTransform"))} :{" "}
+                    </p>
+                  </div>
+                  <div className="sheet-value">
+                    <p className="body-text">
+                      &nbsp;
+                      {refType(styleValue, Identities)}
+                    </p>
+                    {/* <p> {styleValue}</p> */}
+                  </div>
                 </div>
-                <div className="sheet-item">
-                  <p> {refType(styleValue, Identities)}</p>
-                  {/* <p> {styleValue}</p> */}
-                </div>
-              </div>
-            )
-          }
-          return true
-        })}
+              )
+            }
+            return true
+          })}
+        </div>
       </div>
     </div>
   )

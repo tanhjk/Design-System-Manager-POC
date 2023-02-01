@@ -18,7 +18,7 @@ export default function DirectoryTree({ link }) {
             paintDrip
             hex="#0a1451"
             duration={0.5}
-            to="/identities/"
+            to="/identities"
             className={
               link === "identity" ? "emphasis-text active" : "emphasis-text"
             }
@@ -32,7 +32,7 @@ export default function DirectoryTree({ link }) {
             paintDrip
             hex="#0a1451"
             duration={0.5}
-            to="/color-tokens/"
+            to="/color-tokens"
             className={
               link === "color-tokens" ? "emphasis-text active" : "emphasis-text"
             }
@@ -45,7 +45,7 @@ export default function DirectoryTree({ link }) {
             paintDrip
             hex="#0a1451"
             duration={0.5}
-            to="/type-tokens/"
+            to="/type-tokens"
             className={
               link === "type-tokens" ? "emphasis-text active" : "emphasis-text"
             }

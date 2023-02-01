@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: $color-color-blue-900;
 }
 
 main {
@@ -22,8 +23,18 @@ img {
   padding: 0;
   margin: 0;
 }
-
+.logo {
+  width: auto;
+  height: 48px;
+  margin-right: 1rem;
+}
 header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+  position: absolute;
+
   @include themed() {
     color: t($inverse-text);
     background-color: t($alt-background);
@@ -58,6 +69,10 @@ header {
   h3 {
     text-transform: capitalize;
   }
+
+  &.md {
+    max-width: 1024px;
+  }
 }
 .section-header {
   padding: 1rem;
@@ -74,6 +89,10 @@ header {
 
 .page-content {
   padding: calc($size-font-6 * 3) $spacing-md;
+  min-height: 100vh;
+  @include themed() {
+    background-color: t($background);
+  }
 }
 
 .sidebar-menu {
@@ -176,12 +195,6 @@ header {
   }
 }
 
-.type-type {
-  display: inline-block;
-  padding: $spacing-md;
-  margin-right: $spacing-md;
-}
-
 .color-chip {
   min-width: 50px;
   height: 50px;
@@ -200,20 +213,44 @@ header {
   }
 }
 
+.type-type {
+  display: flex;
+  padding: $spacing-md;
+  margin-right: $spacing-md;
+  gap: 0 16px;
+}
+
 .type-fontstyle {
-  border: solid 1px $color-greyscale-grey-400;
-  border-radius: $size-border-radius-form;
+  border-right: solid 1px $color-greyscale-grey-400;
   padding: 16px 0;
+  flex: 0 0 auto;
+  min-width: 200px;
 }
 
 .stylesheet {
   display: flex;
-  width: 100%;
-  margin: 0 16px;
-  font-family: "Courier New", Courier, monospace;
+  flex: 0 0 auto;
+  border-right: 1px solid $color-greyscale-grey-400;
+  padding: 0 16px;
+
+  &:first-child {
+    padding: 0 16px 0 0;
+  }
+  &:last-child {
+    border: 0;
+  }
+}
+.type-attr {
+  display: flex;
 }
 .sheet-item {
-  margin-right: 16px;
+  padding-bottom: 0.5rem;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.sheet-value {
   p {
     margin: 0;
     padding: 0;

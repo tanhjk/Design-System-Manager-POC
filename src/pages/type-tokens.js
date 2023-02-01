@@ -14,14 +14,14 @@ export default function TypeTokens({ children }) {
       </div>
       <div className="col-sm-9 col-md-10">
         <h1>Type Tokens</h1>
-        <p clasName="body-text">
+        <p className="body-text">
           Color tokens are used to define text styles based on the function of
           the token. It usually stores a set a identity tokens or raw value of
           an attribute.
         </p>
         <hr></hr>
 
-        <div className="section">
+        <div className="section ">
           {Object.keys(ttTokens).map(tkey => {
             const typeVal = ttTokens[tkey].value
 
