@@ -1,5 +1,4 @@
 import React from "react"
-
 const pubCode = "mysph"
 const colorMode = "standard"
 
