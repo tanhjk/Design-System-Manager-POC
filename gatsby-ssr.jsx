@@ -10,3 +10,8 @@ exports.onRenderBody = ({ setBodyAttributes }, pluginOptions) => {
     className: `${pubCode} theme--${pubCode}-${colorMode}`,
   })
 }
+
+// Wraps every page in a component
+// exports.wrapPageElement = ({ element, props }) => {
+//   // return <Layout {...props}>{element}</Layout>
+// }
