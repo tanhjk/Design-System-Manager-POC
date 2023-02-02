@@ -210,6 +210,52 @@ StyleDictionary.registerFormat({
   },
 })
 
+StyleDictionary.registerFormat({
+  name: "ttmFormat",
+  formatter: function ({ dictionary }) {
+    var strTokens = `$tmThemes: ( \n`
+    const obj = dictionary.tokens.ttm
+
+    for (let x in obj) {
+      // console.log(x, "- ", obj[x])
+      strTokens += `\t${x}: (\n`
+      dictionary.allTokens.map(tkn => {
+        if (tkn.path[1] === x) {
+          strTokens += `\t\t'${tkn.attributes.item}' :( \n`
+          let styles = tkn.value
+          for (let style in styles) {
+            console.log(style)
+
+            let styleVal = styles[style]
+
+            // console.log(styleVal)
+            if (styleVal !== "") {
+              if (dictionary.usesReference(tkn.original.value)) {
+                // Note: make sure to use `token.original.value` because
+                // `token.value` is already resolved at this point.
+                const refs = dictionary.getReferences(tkn.original.value)
+                refs.forEach(ref => {
+                  styleVal = styleVal.replace(ref.value, function () {
+                    return `$${ref.name}`
+                  })
+                })
+              }
+              style = style.replace("textCase", "textTransform")
+
+              strTokens += `\t\t\t ${kebabize(style)} : ${styleVal}, \n`
+            }
+          }
+          strTokens += `    ), \n`
+        }
+      })
+      strTokens += `  ), \n`
+    }
+    strTokens += `); \n`
+    // console.log(strTokens)
+    return strTokens
+  },
+})
+
 const myStyleDictionary = StyleDictionary.extend({
   // configuration
   source: ["tokens/**/*.json"],
@@ -329,6 +375,32 @@ const myStyleDictionary = StyleDictionary.extend({
           filter: {
             attributes: {
               category: "tt",
+            },
+          },
+          options: {
+            outputReferences: true,
+            fileHeader: "TTHeader",
+          },
+        },
+      ],
+    },
+    "scss/tmtoken": {
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "time/seconds",
+        "content/icon",
+        "size/px",
+        "color/css",
+      ],
+      buildPath: "src/scss/",
+      files: [
+        {
+          destination: `_tmtokens.scss`,
+          format: "ttmFormat",
+          filter: {
+            attributes: {
+              category: "ttm",
             },
           },
           options: {

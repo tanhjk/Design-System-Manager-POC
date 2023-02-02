@@ -1,11 +1,8 @@
 import React from "react"
 import Logo from "../images/LUNA-hori-white@2x.png"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { withPrefix } from "gatsby"
 
 export default function Header() {
-  const pathPre = withPrefix("/")
-
   return (
     <header>
       <AniLink fade duration={0.5} to="/" className="emphasis-text">

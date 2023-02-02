@@ -270,15 +270,15 @@ header {
   }
 }
 
-// //mobile
-// @media screen and (max-width: 512px) {
-//   @each $theme, $map in $themesMob {
-//     @each $token, $lib in $map {
-//       .#{$theme} .#{$token} {
-//         @each $att, $val in $lib {
-//           #{$att}: #{$val};
-//         }
-//       }
-//     }
-//   }
-// }
+//mobile
+@media screen and (max-width: 512px) {
+  @each $theme, $map in $tmThemes {
+    @each $token, $lib in $map {
+      .#{$theme} .#{$token} {
+        @each $att, $val in $lib {
+          #{$att}: #{$val};
+        }
+      }
+    }
+  }
+}
