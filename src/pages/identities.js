@@ -6,6 +6,9 @@ import DirectoryTree from "../components/sidebar/directoryTree"
 
 export default function identities({ children }) {
   const colors = Identities.color
+  const sizes = Identities.size
+  const spacings = Identities.spacing
+  const fonts = Identities.type
   return (
     <Layout>
       <div className="col-sm-3 col-md-2">
@@ -19,24 +22,28 @@ export default function identities({ children }) {
           measurement.
         </p>
         <hr></hr>
-        {Object.keys(colors).map((ckey, index) => {
-          const colorKey = colors[ckey]
-          return (
-            <div className="section">
-              <h3 className="screen-title sentence">{ckey}</h3>
-              {Object.keys(colorKey).map((colorNm, index) => {
-                const colorValue = colorKey[colorNm].value
-                console.log(colorValue)
-                return (
-                  <TokenColor
-                    colorNm={colorNm}
-                    colorValue={colorValue}
-                  ></TokenColor>
-                )
-              })}
-            </div>
-          )
-        })}
+
+        <section>
+          <h4 class="section-title">Colours</h4>
+          {Object.keys(colors).map((ckey, index) => {
+            const colorKey = colors[ckey]
+            return (
+              <div className="section">
+                <h3 className="screen-title sentence">{ckey}</h3>
+                {Object.keys(colorKey).map((colorNm, index) => {
+                  const colorValue = colorKey[colorNm].value
+                  console.log(colorValue)
+                  return (
+                    <TokenColor
+                      colorNm={colorNm}
+                      colorValue={colorValue}
+                    ></TokenColor>
+                  )
+                })}
+              </div>
+            )
+          })}
+        </section>
       </div>
     </Layout>
   )

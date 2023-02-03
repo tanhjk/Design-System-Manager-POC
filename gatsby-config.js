@@ -15,6 +15,7 @@ module.exports = {
   plugins: [
     `gatsby-transformer-json`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

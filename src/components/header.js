@@ -20,7 +20,7 @@ export default function Header() {
           </AniLink>
         </li>
         <li>
-          <AniLink fade duration={0.5} to="#" className="emphasis-text">
+          <AniLink fade duration={0.5} to="/download" className="emphasis-text">
             Download
           </AniLink>
         </li>

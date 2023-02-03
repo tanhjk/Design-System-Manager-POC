@@ -1,0 +1,42 @@
+
+
+$ctheme: ( 
+	mysph-dark: (
+		 highlight-text : $color-color-blue-600, 
+		 core-text : $color-greyscale-white, 
+		 inverse-text : $color-greyscale-grey-900, 
+		 muted-text : $color-greyscale-grey-500, 
+		 link-text : $color-color-blue-600, 
+		 hover-link-text : $color-color-blue-200, 
+		 background : $color-greyscale-grey-900, 
+		 alt-background : $color-greyscale-grey-100, 
+		 button-primary : $color-color-blue-600, 
+  ), 
+	mysph-light: (
+		 highlight-text : $color-color-blue-600, 
+		 core-text : $color-greyscale-grey-900, 
+		 inverse-text : $color-greyscale-grey-100, 
+		 muted-text : $color-greyscale-grey-500, 
+		 link-text : $color-color-blue-600, 
+		 hover-link-text : $color-color-blue-200, 
+		 background : $color-greyscale-grey-100, 
+		 alt-background : $color-color-blue-900, 
+		 button-primary : $color-color-blue-700, 
+  ), 
+	st-standard: (
+		 highlight-text : $color-brand-st-blue, 
+		 core-text : $color-greyscale-grey-900, 
+		 muted-text : $color-brand-st-blue-700, 
+		 link-text : $color-color-mint, 
+		 hover-link-text : $color-brand-st-blue-700, 
+		 background : $color-greyscale-white, 
+  ), 
+	st-dark: (
+		 highlight-text : $color-brand-st-blue, 
+		 core-text : $color-greyscale-grey-900, 
+		 muted-text : $color-brand-st-blue-700, 
+		 link-text : $color-brand-st-turquoise, 
+		 hover-link-text : $color-brand-st-blue-700, 
+		 background : $color-greyscale-white, 
+  ), 
+); 

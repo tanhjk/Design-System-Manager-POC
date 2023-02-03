@@ -15,9 +15,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "adm-zip": "^0.5.10",
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.5.0",
+    "gatsby-plugin-react-helmet": "^6.5.0",
     "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-styled-components": "^5.24.0",
     "gatsby-plugin-transition-link": "^1.20.5",
@@ -39,8 +41,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tanhjk/design-system-manager-poc"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

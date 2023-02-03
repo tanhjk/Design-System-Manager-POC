@@ -64,6 +64,14 @@ header {
     background-color: t($alt-background);
   }
 }
+section {
+  padding: 1rem 0;
+  border-bottom: solid 1px $color-greyscale-grey-500;
+
+  &:last-child {
+    border: 0;
+  }
+}
 .section {
   padding: 1rem 0;
   h3 {
@@ -254,6 +262,22 @@ header {
   p {
     margin: 0;
     padding: 0;
+  }
+}
+
+// form styles
+
+a {
+  &.button {
+    display: inline-block;
+    margin: $spacing-md 0;
+    padding: calc($spacing-lg/2) $spacing-lg;
+    border-radius: $size-border-radius-card;
+    text-decoration: none;
+    @include themed() {
+      color: t($inverse-text);
+      background-color: t($button-primary);
+    }
   }
 }
 

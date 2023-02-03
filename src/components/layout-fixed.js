@@ -10,7 +10,13 @@ export default function Home({ children }) {
         <title>Luna : Commerce Design System Manager (POC)</title>
       </Helmet>
       <Header />
-      <div>{children}</div>
+      <div className="fluid-container page-content">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">{children}</div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

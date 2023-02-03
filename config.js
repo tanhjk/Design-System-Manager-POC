@@ -1,6 +1,10 @@
 const StyleDictionary = require("style-dictionary")
 const tokens = require("./tokens")
 const path = require("path")
+const fs = require("fs")
+var AdmZip = require("adm-zip")
+
+var dsm_dir = "src/scss/dsm/"
 
 const kebabize = str => {
   return str
@@ -63,7 +67,6 @@ StyleDictionary.registerFormat({
         // the value has a reference in it. `getReferences()` will return
         // an array of references to the whole tokens so that you can access their
         // names or any other attributes.
-        // console.log(token.value)
         const ttVal = token.value
         value =
           ttVal.x +
@@ -103,7 +106,6 @@ StyleDictionary.registerFormat({
                 })
               })
             }
-            // console.log(objToken[tokenNm].name)
             tokenList += `$${kebabize(tokenNm)}: '${kebabize(tokenNm)}'; \n`
           }
         }
@@ -119,7 +121,6 @@ StyleDictionary.registerFormat({
     const objToken = dictionary.tokens.colorTokens.mysph.standard
     let tokenList = ``
     for (let tokenNm in objToken) {
-      console.log(tokenNm)
       tokenList += `$${kebabize(tokenNm)}: '${kebabize(tokenNm)}';\n`
     }
     var strTokens = `$ctheme: ( \n`
@@ -178,7 +179,7 @@ StyleDictionary.registerFormat({
           strTokens += `\t\t'${tkn.attributes.item}' :( \n`
           let styles = tkn.value
           for (let style in styles) {
-            console.log(style)
+            // console.log(style)
 
             let styleVal = styles[style]
 
@@ -224,7 +225,7 @@ StyleDictionary.registerFormat({
           strTokens += `\t\t'${tkn.attributes.item}' :( \n`
           let styles = tkn.value
           for (let style in styles) {
-            console.log(style)
+            // console.log(style)
 
             let styleVal = styles[style]
 
@@ -269,7 +270,7 @@ const myStyleDictionary = StyleDictionary.extend({
         "size/px",
         "color/css",
       ],
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_base.scss`,
@@ -284,7 +285,7 @@ const myStyleDictionary = StyleDictionary.extend({
     },
     "scss/colorBaseToken": {
       transformGroup: "scss",
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_color-base-tokens.scss`,
@@ -303,7 +304,7 @@ const myStyleDictionary = StyleDictionary.extend({
     },
     "scss/type": {
       transformGroup: "scss",
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_typography.scss`,
@@ -322,7 +323,7 @@ const myStyleDictionary = StyleDictionary.extend({
     },
     "scss/shadow": {
       transformGroup: "scss",
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_shadow.scss`,
@@ -341,7 +342,7 @@ const myStyleDictionary = StyleDictionary.extend({
     },
     "scss/ctokens": {
       transformGroup: "scss",
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_ctokens.scss`,
@@ -367,7 +368,7 @@ const myStyleDictionary = StyleDictionary.extend({
         "size/px",
         "color/css",
       ],
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_ttokens.scss`,
@@ -393,7 +394,7 @@ const myStyleDictionary = StyleDictionary.extend({
         "size/px",
         "color/css",
       ],
-      buildPath: "src/scss/",
+      buildPath: dsm_dir,
       files: [
         {
           destination: `_tmtokens.scss`,
@@ -423,3 +424,27 @@ StyleDictionary.registerFormat({
 })
 
 myStyleDictionary.buildAllPlatforms()
+packageDSM()
+
+// creating archives
+function packageDSM() {
+  var zip = new AdmZip()
+
+  var dirPath = path.join(__dirname, dsm_dir)
+  fs.readdir(dirPath, (err, files) => {
+    files.forEach(item => {
+      // add local file
+      zip.addLocalFile(dsm_dir + item)
+
+      // console.log("filename", item)
+    })
+
+    // get everything as a buffer
+    var willSendthis = zip.toBuffer()
+
+    if (fs.existsSync("static/dl/luna-v1.zip")) {
+      fs.unlinkSync("static/dl/luna-v1.zip")
+    }
+    zip.writeZip(/*target file name*/ "static/dl/luna-v1.zip")
+  })
+}
