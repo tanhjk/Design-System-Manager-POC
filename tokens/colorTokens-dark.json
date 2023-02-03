@@ -33,6 +33,10 @@
         "altBackground": {
           "value": "{color.greyscale.grey-100}",
           "type": "color"
+        },
+        "buttonPrimary": {
+          "value": "{color.color.blue-600}",
+          "type": "color"
         }
       }
     }

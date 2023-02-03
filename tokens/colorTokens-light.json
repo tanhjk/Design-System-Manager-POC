@@ -33,6 +33,11 @@
         "altBackground": {
           "value": "{color.color.blue-900}",
           "type": "color"
+        },
+        "buttonPrimary": {
+          "value": "{color.color.blue-700}",
+          "type": "color",
+          "description": "primary button"
         }
       }
     }
