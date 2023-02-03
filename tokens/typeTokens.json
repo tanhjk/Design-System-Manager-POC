@@ -32,7 +32,7 @@
           "fontFamily": "{type.fontFamilies.source-sans-pro}",
           "fontWeight": "{type.fontWeights.semibold600}",
           "lineHeight": "{type.lineHeights.115}",
-          "fontSize": "{size.font.5}",
+          "fontSize": "{size.font.4}",
           "letterSpacing": "",
           "paragraphSpacing": "",
           "textCase": "{type.textCases.normal}",
