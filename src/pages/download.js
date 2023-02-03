@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout-fixed"
+import { withPrefix } from "gatsby"
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
             source Sass, JavaScript, and documentation files. This option
             requires some additional tooling:
           </p>
-          <a className="button" href={"/../../dl/luna-v1.zip"}>
+          <a className="button" href={withPrefix("/") + "../../dl/luna-v1.zip"}>
             Download
           </a>
         </section>
