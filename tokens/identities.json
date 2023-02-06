@@ -69,23 +69,23 @@
         "value": "#56acf7",
         "type": "color"
       }
+    }
+  },
+  "gradients": {
+    "g-trans-white": {
+      "value": "linear-gradient(180deg, #ffffff00 49.99%, #ffffff 50%)",
+      "type": "color",
+      "description": "used for label background"
     },
-    "gradients": {
-      "g-trans-white": {
-        "value": "linear-gradient(180deg, #ffffff00 49.99%, #ffffff 50%)",
-        "type": "color",
-        "description": "used for label background"
-      },
-      "g-trans-grey-900": {
-        "value": "linear-gradient(180deg, #12121200 49.99%, #121212 50%)",
-        "type": "color",
-        "description": "used for label background dark mode"
-      },
-      "g-trans-grey-300": {
-        "value": "linear-gradient(180deg, #12121200 49.99%, #f5f5f5 50%)",
-        "type": "color",
-        "description": "used for label alt background"
-      }
+    "g-trans-grey-900": {
+      "value": "linear-gradient(180deg, #12121200 49.99%, #121212 50%)",
+      "type": "color",
+      "description": "used for label background dark mode"
+    },
+    "g-trans-grey-300": {
+      "value": "linear-gradient(180deg, #12121200 49.99%, #f5f5f5 50%)",
+      "type": "color",
+      "description": "used for label alt background"
     }
   },
   "size": {
@@ -162,10 +162,10 @@
       "value": {
         "color": "#808080",
         "type": "dropShadow",
-        "x": 5,
-        "y": 5,
-        "blur": 10,
-        "spread": 0
+        "x": "5",
+        "y": "5",
+        "blur": "10",
+        "spread": "0"
       },
       "type": "boxShadow"
     },
@@ -173,10 +173,10 @@
       "value": {
         "color": "#0000001a",
         "type": "dropShadow",
-        "x": 5,
-        "y": 5,
-        "blur": 10,
-        "spread": 0
+        "x": "5",
+        "y": "5",
+        "blur": "10",
+        "spread": "0"
       },
       "type": "boxShadow"
     }
