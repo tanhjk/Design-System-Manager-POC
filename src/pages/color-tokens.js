@@ -5,7 +5,6 @@ import DirectoryTree from "../components/sidebar/directoryTree"
 import CT from "../../tokens/colorTokens-light.json"
 import CTDark from "../../tokens/colorTokens-dark.json"
 import Identities from "../../tokens/identities.json"
-
 export default function ColorTokens({ children }) {
   const colors = CT.colorTokens.mysph.light
   const dcolors = CTDark.colorTokens.mysph.dark
@@ -16,6 +15,7 @@ export default function ColorTokens({ children }) {
     const zoneObj = obj[cat][lastVal]
     return zoneObj.value
   }
+
   return (
     <Layout>
       <div className="col-sm-3 col-md-2">
@@ -35,16 +35,18 @@ export default function ColorTokens({ children }) {
             const colorKey = colors[ckey]
             const colorVal = colorKey.value.slice(1, -1)
 
+            console.log(refColor(colorVal, Identities.color))
             return (
               <TokenColor
                 colorNm={ckey}
                 colorValue={refColor(colorVal, Identities.color)}
+                tokenNm={colorVal}
               ></TokenColor>
             )
           })}
         </div>
 
-        <div className="section">
+        <div className="section dark">
           <h3 className="screen-title sentence">Dark</h3>
           {Object.keys(dcolors).map((ckey, index) => {
             const colorKey = dcolors[ckey]
@@ -54,6 +56,7 @@ export default function ColorTokens({ children }) {
               <TokenColor
                 colorNm={ckey}
                 colorValue={refColor(colorVal, Identities.color)}
+                tokenNm={colorVal}
               ></TokenColor>
             )
           })}

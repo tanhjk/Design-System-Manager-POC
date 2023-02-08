@@ -51,7 +51,8 @@ StyleDictionary.registerFilter({
     return (
       token.attributes.category === "color" ||
       token.attributes.category === "size" ||
-      token.attributes.category === "spacing"
+      token.attributes.category === "spacing" ||
+      token.attributes.category === "gradients"
     )
   },
 })

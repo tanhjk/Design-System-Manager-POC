@@ -1,13 +1,13 @@
 
 // Do not edit directly
-// Generated on Fri, 03 Feb 2023 09:56:52 GMT
+// Generated on Mon, 06 Feb 2023 18:18:42 GMT
 // 
 // mySPH tokens generated do not edit
 
 $spacing-xl: 60px;
 $spacing-lg: 24px;
 $spacing-md: 18px;
-$spacing-sm: 16;
+$spacing-sm: 16px;
 $spacing-xs: 8px;
 $spacing-xxs: 4px;
 $size-font-6: 48px;
@@ -19,7 +19,10 @@ $size-font-1: 14px;
 $size-font-0: 13px;
 $size-border-radius-form: 8px;
 $size-border-radius-card: 32px;
-$color-brand-blue: #56acf7;
+$gradients-g-trans-grey-300: linear-gradient(180deg, #12121200 49.99%, #f5f5f5 50%);
+$gradients-g-trans-grey-900: linear-gradient(180deg, #12121200 49.99%, #121212 50%);
+$gradients-g-trans-white: linear-gradient(180deg, #ffffff00 49.99%, #ffffff 50%);
+$color-brand-st-blue-600: #56acf7;
 $color-brand-st-turquoise: #13fdfd;
 $color-brand-st-blue-700: #12239a;
 $color-brand-st-blue: #0c2b57;

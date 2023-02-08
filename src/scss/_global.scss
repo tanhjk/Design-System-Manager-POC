@@ -73,13 +73,20 @@ section {
   }
 }
 .section {
-  padding: 1rem 0;
+  padding: 1rem 1rem;
+  &.sub {
+    padding: 1rem 0;
+  }
   h3 {
     text-transform: capitalize;
   }
 
   &.md {
     max-width: 1024px;
+  }
+  &.dark {
+    background-color: $color-greyscale-grey-900;
+    color: $color-greyscale-grey-100;
   }
 }
 .section-header {
@@ -198,6 +205,7 @@ section {
   padding: $spacing-md;
   margin: $spacing-xs;
   gap: 16px;
+  cursor: pointer;
   h1 {
     color: $highlight-text;
   }
@@ -208,7 +216,7 @@ section {
   height: 50px;
   display: block;
   border-radius: 50%;
-  border: 1px solid $color-greyscale-grey-100;
+  border: 1px solid $color-greyscale-grey-400;
 }
 
 .token-detail {
@@ -233,6 +241,34 @@ section {
   padding: 16px 0;
   flex: 0 0 auto;
   min-width: 200px;
+}
+.grid-table {
+  display: block;
+  max-width: 330px;
+}
+.table-head,
+.table-body {
+  display: flex;
+  width: 100%;
+  border-left: solid 1px $color-greyscale-grey-400;
+  border-top: solid 1px $color-greyscale-grey-400;
+
+  > div {
+    border-right: solid 1px $color-greyscale-grey-400;
+    border-bottom: solid 1px $color-greyscale-grey-400;
+    padding: $spacing-xs;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.table-head {
+  .header-label {
+    font-weight: 700;
+  }
+  .header-value {
+    font-weight: 700;
+  }
 }
 
 .stylesheet {
@@ -277,32 +313,6 @@ a {
     @include themed() {
       color: t($inverse-text);
       background-color: t($button-primary);
-    }
-  }
-}
-
-//desktop
-@media screen and (min-width: 513px) {
-  @each $theme, $map in $tThemes {
-    @each $token, $lib in $map {
-      .#{$theme} .#{$token} {
-        @each $att, $val in $lib {
-          #{$att}: #{$val};
-        }
-      }
-    }
-  }
-}
-
-//mobile
-@media screen and (max-width: 512px) {
-  @each $theme, $map in $tmThemes {
-    @each $token, $lib in $map {
-      .#{$theme} .#{$token} {
-        @each $att, $val in $lib {
-          #{$att}: #{$val};
-        }
-      }
     }
   }
 }

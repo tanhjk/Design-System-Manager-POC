@@ -24,3 +24,29 @@
 @function t($key) {
   @return map-get($theme-map, $key);
 }
+
+//desktop
+@media screen and (min-width: 513px) {
+  @each $theme, $map in $tThemes {
+    @each $token, $lib in $map {
+      .#{$theme} .#{$token} {
+        @each $att, $val in $lib {
+          #{$att}: #{$val};
+        }
+      }
+    }
+  }
+}
+
+//mobile
+@media screen and (max-width: 512px) {
+  @each $theme, $map in $tmThemes {
+    @each $token, $lib in $map {
+      .#{$theme} .#{$token} {
+        @each $att, $val in $lib {
+          #{$att}: #{$val};
+        }
+      }
+    }
+  }
+}
