@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "b270ed87c91744489b6d6e7afd5a12eac1959856",
+    "name": "SPH",
+    "selectedTokenSets": {
+      "identities": "source",
+      "colorTokens-light": "source",
+      "colorTokens-dark": "source",
+      "typeTokens": "enabled",
+      "typeTokens-mob": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "0854c3c037fd017438e6ecc62b0e0e20a99ae295",
+    "name": "ST",
+    "selectedTokenSets": {
+      "identities": "source",
+      "st": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  }
+]
